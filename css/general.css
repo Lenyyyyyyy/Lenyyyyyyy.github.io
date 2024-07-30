@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  position: relative;
+  color: #fff;
+}
+
+.container{
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid{
+  display: grid;
+  gap: 1.6rem;
+}
+
+.grid--3-cols{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(207, 219, 206);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.2rem 3.2rem;
+  border-radius: 100px;
+  transition: all 0.26s;
+}
+
+.btn.btn--primary:link,
+.btn.btn--primary:visited {
+  background-color: rgba(167, 197, 175, 0.236);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(226, 226, 226, 0.2);
+}
+.btn.btn--primary:hover,
+.btn.btn--primary:active {
+  background-color: rgba(167, 197, 175, 0.33);
+  border: 1px solid rgba(226, 226, 226, 0.257);
+  color: rgb(230, 237, 229);
+  text-shadow: rgba(255, 255, 255, 0.482) 0px 0px 5px;
+}
+
+.btn.btn--secondary:link,
+.btn.btn--secondary:visited {
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(226, 226, 226, 0.2);
+}
+.btn.btn--secondary:hover,
+.btn.btn--secondary:active {
+  background-color: rgba(167, 197, 175, 0.086);
+  color: rgb(230, 237, 229);
+  text-shadow: rgba(255, 255, 255, 0.482) 0px 0px 5px;
+}

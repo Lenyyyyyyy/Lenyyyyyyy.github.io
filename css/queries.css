@@ -1,0 +1,131 @@
+/* BELOW 928px */
+@media (max-width: 58em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  html {
+    font-size: 55%;
+  }
+}
+
+/* BELOW 644px */
+
+@media (max-width: 40.25em) {
+  html {
+    font-size: 50%;
+  }
+
+  .logo {
+    font-size: 3.6rem;
+  }
+  .container {
+    padding: 0 3.6rem;
+  }
+
+  .landing-page {
+    padding: 0 3.6rem;
+  }
+
+
+  .heading-buttons{
+    flex-direction: column;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 2.4rem;
+    padding: 2rem 5.2rem;
+  }
+
+  /* MOBILE */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 30rem;
+    height: 45vh;
+    top: 38%;
+    right: -15px;
+    background-color: #a7c5af19;
+    backdrop-filter: blur(8px);
+    /* top: 45vh; */
+    /* transform: translateY(-40%); */
+    /* transform: scale(1.1); */
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: 0.4s;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 6.4rem;
+    font-size: 2.4rem;
+  }
+
+  .main-nav-item:link,
+  .main-nav-item:visited {
+    padding: 1.2rem 6.4rem;
+    border-radius: 15px;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"]{
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"]{
+    display: block;
+  }
+  
+}
+
+@media (max-width:26em){
+  .grid--3-cols{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* WYSOKOSC */
+
+@media (max-height:50em){
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  
+  .heading-primary{
+    font-size: 4.4rem;
+  }
+  
+  .heading-description{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-height:38.56em){
+  .heading-primary{
+    font-size: 4rem;
+  }
+  
+  .heading-description{
+    font-size: 1.8rem;
+  }
+}

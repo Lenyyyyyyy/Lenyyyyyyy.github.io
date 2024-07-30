@@ -1,0 +1,239 @@
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  background-image: linear-gradient(#00000054, #00000054), url(../img/bc1.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.landing-page {
+  max-width: 130rem;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  padding: 0 2.4rem;
+  position: relative;
+}
+
+
+
+
+
+/**************/
+/* NAVIGATION */
+/**************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  padding-top: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.main-nav {
+  background-color: #a7c5af0e;
+  border: 1px solid #ffffff1d;
+  backdrop-filter: blur(2px);
+  padding: 1rem 0.8rem;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.logo{
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.main-nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 0.4rem;
+}
+
+.main-nav-item:link,
+.main-nav-item:visited {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.4rem 1.2rem;
+  border-radius: 100px;
+  transition: all 0.2s;
+  font-weight: 400;
+}
+
+.main-nav-item:last-child {
+  margin-right: 0;
+}
+
+.main-nav-item:hover,
+.main-nav-item:active {
+  background-color: #a7c5af17;
+  text-shadow: 0px 0px 5px #ffffff7b;
+  box-shadow: inset 0 0 0 1px #ffffff1a;
+}
+
+.main-nav-item.nav--primary:link,
+.main-nav-item.nav--primary:visited {
+  background-color: #a7c5af30;
+  box-shadow: inset 0 0 0 1px #ffffff1a;
+  font-weight: 500;
+}
+
+.main-nav-item.nav--primary:hover,
+.main-nav-item.nav--primary:active {
+  background-color: #a7c5af52;
+  box-shadow: inset 0 0 0 1px #ffffff1a;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav{
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav{
+  width: 3.6rem;
+  height: 3.6rem;;
+  color: #fff;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+  display: none;
+}
+
+/****************/
+/* HERO SECTION */
+/****************/
+
+.section-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-text-box{
+  padding: 0 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90rem;
+}
+
+.heading-primary{
+  color: rgb(161, 193, 166);
+  font-weight: 600;
+  font-size: 5.8rem;
+  line-height: 1;
+  letter-spacing: -0.75px;
+  margin-bottom: 3.2rem;
+}
+
+.heading-description{
+  color: rgb(207, 219, 206);
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 4.8rem;
+}
+
+.heading-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+/********************/
+/* FEATURES SECTION */
+/********************/
+
+.section-features{
+  padding: 9.6rem 0;
+  /* NEXT COLOR! */
+  /* background-color: #282c26; */
+  background-color: #040804;
+  color: #333;
+}
+
+.subheading{
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: #a1c1a6;
+  margin-bottom: 0.8rem;
+}
+
+.heading-secondary{
+  letter-spacing: -0.5px;
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #cfdbce;
+  margin-bottom: 6.4rem;
+}
+
+
+.feature-box{
+  color: #fff;
+  border: 1px solid #4f524f72;
+  background-color: #1d211d74;
+  padding: 2.4rem 3.6rem;
+  border-radius: 17px;
+  backdrop-filter: blur(5px);
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  box-shadow: 0 0 10px #ffffff15;
+  transition: all 0.2s;
+}
+
+.feature-box:hover,
+.feature-box:active{
+  background-color: #1d211d84;
+}
+
+.heading-feature{
+  font-size: 2.4rem;
+  font-size: 500;
+  margin-bottom: 1.2rem;
+  color: #b4cdb8;
+}
+
+.description-feature{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #e3ece4;
+}
+
+.icon-feature{
+  position: absolute;
+  width: 40rem;
+  top: 0;
+  left: 0;
+  transform: translate(10%,-10%);
+  z-index: -10;
+  mix-blend-mode: color-dodge;
+}
+
